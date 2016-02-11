@@ -18,6 +18,7 @@ gem "paperclip", "~> 4.3"
 gem 'puma'
 gem 'aws-sdk'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'devise'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
