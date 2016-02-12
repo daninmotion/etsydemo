@@ -8,6 +8,13 @@
               <h3><%= listing.name %></h3>
               <p><%= number_to_currency(listing.price) %><p><br>
               <p><%= "Sold by #{listing.user.name}" %></p>
+              <p> 
+                <% if (user_signed_in?) && (current_user == listing.user) %>
+                  <%= link_to 'Edit', edit_listing_path(listing) %> |
+                  <%= link_to 'Destroy', listing, method: 
+                  :delete, data: { confirm: 'Are you sure?' } %>
+                <% end %>
+              </p>
             </div>
           </div>
       </div>
