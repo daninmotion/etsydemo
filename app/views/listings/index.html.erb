@@ -7,11 +7,14 @@
             <div class="text-center">
               <h3><%= listing.name %></h3>
               <p><%= number_to_currency(listing.price) %><p><br>
+              <p><%= "Sold by #{listing.user.name}" %></p>
+              <p>
+                <%= link_to 'Show', listing %> |
+                <%= link_to 'Edit', edit_listing_path(listing) %> |
+                <%= link_to 'Destroy', listing, method: :delete, 
+                data: { confirm: 'Are you sure?' } %>
+              </p>
             </div>
-            <%= link_to 'Show', listing %> |
-            <%= link_to 'Edit', edit_listing_path(listing) %> |
-            <%= link_to 'Destroy', listing, method: :delete, 
-              data: { confirm: 'Are you sure?' } %>
           </div>
       </div>
     </div>
