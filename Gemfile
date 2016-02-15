@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -19,6 +20,7 @@ gem 'puma'
 gem 'aws-sdk'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'devise'
+gem 'stripe'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
