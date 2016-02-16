@@ -1,11 +1,24 @@
 == README
+What i covered; 
 
 *Ruby on Rails
 
-*Bootstrap
+*Product listings with images
+
+*User Sign in/Sign out
+
+*Pages for Users to manager their listings and view their order history
+
+*A buy it now feature
+
+*Integrated Stipe's API to accept payments online
+
+*Front-end design with Bootstrap
 
 *Paperclip Gem w/Image Magick Gem
 
-*Dropbox
+*Amazon S3 for image hosting
+
+*Deployment with Heroku
 
 ...
