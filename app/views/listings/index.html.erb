@@ -21,5 +21,5 @@
 </div><!--row ends-->
 <br>
 <% if user_signed_in? %>
-  <%= link_to 'New Listing', new_listing_path, class: "btn btn-primary" %>
+  <%= link_to 'New Listing', new_listing_path, class: "btn btn-primary", data: { no_turbolink: true } %>
 <% end %>
